@@ -12,7 +12,6 @@ tags:   UX design
 
 
 
- ```
 package main
 
 import (
@@ -37,4 +36,3 @@ func main() {
 	info, _ := net.IOCounters(false)
 	fmt.Println(info[0].BytesSent,info[0].BytesRecv,info[0])
 }
-```
