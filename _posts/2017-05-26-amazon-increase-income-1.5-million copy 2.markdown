@@ -6,9 +6,11 @@ image:  /assets/images/33do.jpg
 author: ituserxxx
 tags:   golang
 ---
+
+
 直接看代码
 
- ```
+
 package main
 
 import (
@@ -33,4 +35,3 @@ func main() {
 	info, _ := net.IOCounters(false)
 	fmt.Println(info[0].BytesSent,info[0].BytesRecv,info[0])
 }
-```
