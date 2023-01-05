@@ -12,10 +12,10 @@ address: 125/A, CA Commercial Area, California, USA
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
 menu:
-  - { name: 关于, link: "/about" }
-  - { name: 博客, link: "/blog" }
+  - { name: About, link: "/about" }
+  - { name: Blog, link: "/blog" }
   # - { name: Portfolio, link: "/portfolio" }
-  - { name: Contact, link: "/contact" }
+  # - { name: Contact, link: "/contact" }
 
 #-------------------------------
 # Google Analytics Section
@@ -36,7 +36,7 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Hi! I’m <br> Christoher <br> UX designer
+  hero-title: Hi! I’m <br> Freedom <br> Coder
 
 # social:
 #   - { icon: "ti-facebook", link: "#" }
@@ -86,12 +86,13 @@ team:
 #-------------------------------
 # Skills Section
 
-skills-title: Skills
+skills-title: 技能
 skills:
-  - { name: Web Design, color: "#fdb157", value: "90%" }
-  - { name: Logo Design, color: "#9473e6", value: "60%" }
-  - { name: After Effects, color: "#bdecf6", value: "80%" }
-  - { name: Web App, color: "#ffbcaa", value: "70%" }
+  - { name: Php, color: "#fdb157", value: "80%" }
+  - { name: Golang, color: "#9473e6", value: "80%" }
+  - { name: Node, color: "#ffbcaa", value: "60%" }
+  - { name: Python, color: "#ffbca6", value: "60%" }
+  - { name: Html/css/js, color: "#bdecf6", value: "60%" }
 
 #-------------------------------
 # Exprerience Section
@@ -99,22 +100,16 @@ skills:
 experience-title: Experience
 experience:
   - {
-      name: Junior UX Designer,
+      name: "php+golang开发",
       icon: "icon-1.png",
-      date: "Jan 2007 - Feb 2009",
-      organization: "WEBEX",
+      date: "Jan 2018 - Feb 2021",
+      organization: "Too yong too simple",
     }
   - {
-      name: UX & UI Designer,
-      icon: "icon-2.png",
-      date: "Mar 2009 - Aug 2014",
-      organization: "AUGMEDIX",
-    }
-  - {
-      name: Senior UI Designer,
+      name: "后端开发",
       icon: "icon-3.png",
-      date: "Sep 2014 - Present",
-      organization: "THEMEFISHER",
+      date: "Sep 2021 - Present",
+      organization: "Utek",
     }
 
 #-------------------------------
@@ -123,49 +118,39 @@ experience:
 education-title: Education
 education:
   - {
-      name: Marters in UX Design,
-      date: "2006",
-      organization: "Masassusets Institute of Technology",
+      name: Sernior high school,
+      date: "2012-2015",
+      organization: "三汇中学",
     }
   - {
-      name: Honours in Fine Arts,
-      date: "2004",
-      organization: "Harvard University",
-    }
-  - {
-      name: Higher Secondary Certificat,
-      date: "2000",
-      organization: "Cardiff School",
-    }
-  - {
-      name: Secondary School Certificate,
-      date: "1998",
-      organization: "Cardiff School",
+      name: "University",
+      date: "2015-2018",
+      organization: "电子科技大学成都学院",
     }
 
 #-------------------------------
 # Services Section
 
-services-title: Services
-services:
-  - {
-      name: UI Design,
-      icon: ti-palette,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      active: ,# Add true to select section
-    }
-  - {
-      name: UX Design,
-      icon: ti-vector,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      active: true, # Add true to select section
-    }
-  - {
-      name: Interaction Design,
-      icon: ti-panel,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      active: ,# Add true to select section
-    }
+# services-title: Services
+# services:
+#   - {
+#       name: UI Design,
+#       icon: ti-palette,
+#       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+#       active: ,# Add true to select section
+#     }
+#   - {
+#       name: UX Design,
+#       icon: ti-vector,
+#       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+#       active: true, # Add true to select section
+#     }
+#   - {
+#       name: Interaction Design,
+#       icon: ti-panel,
+#       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+#       active: ,# Add true to select section
+#     }
 
 #-------------------------------
 # Portfolio (Section and Page)
