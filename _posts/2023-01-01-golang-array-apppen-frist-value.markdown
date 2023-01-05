@@ -8,7 +8,7 @@ tags:   Golang
 ---
 
 
-```
+```go
 func Test_a(t *tesing.T){
     l := []string{"b"}
     a := "a"

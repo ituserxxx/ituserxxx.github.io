@@ -22,7 +22,7 @@ demo
 
 a.c文件内容
 
-```
+```c
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
@@ -35,13 +35,13 @@ int add(int a,int b) {
 
 编译动态库
 
-```
+```shell
 gcc -shared -fPIC  -o a.so a.c -lm
 ```
 
 a.js文件调用
 
-```
+```nodejs
 var ffi = require('ffi-napi');
 //serial_name, int baudrate, int bits, char parity, int stop, char flow
 var g = ffi.Library('./a.so',{'add':['int',[ "int", "int" ]]});

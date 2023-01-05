@@ -8,7 +8,7 @@ tags:   Golang
 ---
 
 
-```
+```go
 package main
 
 import (
