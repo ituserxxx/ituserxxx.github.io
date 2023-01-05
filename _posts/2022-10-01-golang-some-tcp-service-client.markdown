@@ -4,11 +4,11 @@ title:  go 实现Tcp 多线程服务端
 date:   2022-10-01 09:05:55 +0300
 image:  /assets/images/33do.jpg
 author: ituserxxx
-tags:   Golang
+tags:   [Golang,Tcp]
 ---
 
 
-
+```go
 package tcp
 
 import (
@@ -195,3 +195,4 @@ func Close(ip string, port int64)  {
 		}
 	}
 }
+```
