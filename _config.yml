@@ -3,7 +3,7 @@ url: "www.33do.cn" # the base hostname & protocol for your site, e.g. http://exa
 
 # Build settings
 # markdown: kramdown
-markdown: kramdown
+markdown: redcarpet
 highlighter: rouge
 lsi:         false
 excerpt_separator: "\n\n"
