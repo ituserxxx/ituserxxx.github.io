@@ -1,12 +1,11 @@
 ---
 layout: post
 title:  golang 获取系统信息(cpu 内存 磁盘 网络)
-date:   2023-01-05 12:00
+date:   2017-05-26 14:05:55 +0300
 image:  /assets/images/33do.jpg
 author: ituserxxx
-tags:   golang
+tags:  Golang
 ---
-
 
 直接看代码
 
