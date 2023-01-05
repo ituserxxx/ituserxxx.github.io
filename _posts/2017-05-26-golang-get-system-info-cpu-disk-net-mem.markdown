@@ -2,9 +2,9 @@
 layout: post
 title:  golang 获取系统信息(cpu 内存 磁盘 网络)
 date:   2023-01-05 11:05:55 +0300
-image:  /assets/images/blog/post-5.jpg
-author: uixgeek
-tags:   UX design
+image:  /assets/images/33do.jpg
+author: ituserxxx
+tags:   Golang
 ---
 
 

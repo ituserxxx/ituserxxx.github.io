@@ -1,3 +1,7 @@
+# ch doc
+
+jekyllcn.com/docs/usage/
+
 # Kross Jekyll
 
 Kross Jekyll Creative Portfolio Template ported from [Kross HTML Template](https://themefisher.com/products/kross/)
