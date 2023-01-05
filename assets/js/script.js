@@ -34,8 +34,8 @@
   /* ########################################### hero parallax ############################################## */
   window.onload = function () {
     var parallaxBox = document.getElementById("parallax");
-    var /* c1left = document.getElementById('l1').offsetLeft,
-                       c1top = document.getElementById('l1').offsetTop, */
+    var c1left = document.getElementById('l1').offsetLeft,
+        c1top = document.getElementById('l1').offsetTop,
       c2left = document.getElementById("l2").offsetLeft,
       c2top = document.getElementById("l2").offsetTop,
       c3left = document.getElementById("l3").offsetLeft,
