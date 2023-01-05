@@ -1,18 +1,18 @@
 ---
 layout: post
 title:  golang 获取系统信息(cpu 内存 磁盘 网络)
-date:   2017-05-26 14:05:55 +0300
+date:   2023-01-05 14:05:55 +0300
 image:  /assets/images/33do.jpg
 author: ituserxxx
 tags:  Golang
 ---
 
 
-**Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.**
+**golang 获取系统信息(cpu 内存 磁盘 网络)**
 
 
 
-
+```golang
 package main
 
 import (
@@ -37,3 +37,4 @@ func main() {
 	info, _ := net.IOCounters(false)
 	fmt.Println(info[0].BytesSent,info[0].BytesRecv,info[0])
 }
+```
