@@ -5,9 +5,9 @@
 title: 33do
 logo:
 author: ituserxxx
-description: this is meta description
-email: xxx@vtian.top
-# phone: +880 2544 658 256
+description: this is 33do space
+email: xxx@33do.cn
+phone: +880 2544 658 256
 address: 广东/深圳
 # copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
@@ -86,7 +86,7 @@ team:
 #-------------------------------
 # Skills Section
 
-skills-title: 技能
+skills-title: Skills
 skills:
   - { name: Php, color: "#fdb157", value: "80%" }
   - { name: Golang, color: "#9473e6", value: "80%" }
