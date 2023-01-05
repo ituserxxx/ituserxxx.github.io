@@ -2,9 +2,9 @@
 #-------------------------------
 # General Site Settings
 
-title: Kross
+title: 33do
 logo:
-author: themefisher
+author: ituserxxx
 description: this is meta description
 email: steve.fruits@email.com
 phone: +880 2544 658 256
@@ -12,9 +12,9 @@ address: 125/A, CA Commercial Area, California, USA
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
 menu:
-  - { name: About, link: "/about" }
-  - { name: Blog, link: "/blog" }
-  - { name: Portfolio, link: "/portfolio" }
+  - { name: 关于, link: "/about" }
+  - { name: 博客, link: "/blog" }
+  # - { name: Portfolio, link: "/portfolio" }
   - { name: Contact, link: "/contact" }
 
 #-------------------------------
@@ -38,11 +38,11 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 hero:
   hero-title: Hi! I’m <br> Christoher <br> UX designer
 
-social:
-  - { icon: "ti-facebook", link: "#" }
-  - { icon: "ti-instagram", link: "#" }
-  - { icon: "ti-dribbble", link: "#" }
-  - { icon: "ti-twitter", link: "#" }
+# social:
+#   - { icon: "ti-facebook", link: "#" }
+#   - { icon: "ti-instagram", link: "#" }
+#   - { icon: "ti-dribbble", link: "#" }
+#   - { icon: "ti-twitter", link: "#" }
 
 #-------------------------------
 # About (Section and Page)
