@@ -9,6 +9,9 @@ lsi:         false
 excerpt_separator: "\n\n"
 incremental: false
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
     
 permalink: pretty
