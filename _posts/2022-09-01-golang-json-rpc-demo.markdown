@@ -2,7 +2,7 @@
 layout: post
 title:  golang jsonrpc demo
 date:   2022-10-01 09:05:55 +0300
-# image:  /assets/images/33do.jpg
+image:  /assets/images/33do.jpg
 author: ituserxxx
 tags:   [Golang,Rpc]
 ---
