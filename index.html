@@ -58,6 +58,49 @@
 
 </html>
 
+<script>
+    // 处理 markdown 文件加载和显示
+    document.querySelectorAll('[data-md]').forEach(link => {
+        link.addEventListener('click', async (e) => {
+            e.preventDefault();
+            const mdFile = e.target.getAttribute('data-md');
+            try {
+                console.log(mdFile)
+                const response = await fetch(mdFile);
+                const text = await response.text();
+                // 使用 marked 将 markdown 转换为 html
+                document.getElementById('content').innerHTML = marked.parse(text);
+            } catch (error) {
+                console.error('Error loading markdown file:', error);
+                document.getElementById('content').innerHTML =
+                    '<p>Error loading content</p>';
+            }
+        });
+    });
+    // 添加简单的交互效果
+    document.addEventListener('DOMContentLoaded', () => {
+        // 导航栏滚动效果
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // 按钮点击效果
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 200);
+            });
+        });
+    });
+</script>
 <style>
     * {
         margin: 0;
@@ -201,46 +244,3 @@
         }
     }
 </style>
-
-<script>
-    // 处理 markdown 文件加载和显示
-    document.querySelectorAll('[data-md]').forEach(link => {
-        link.addEventListener('click', async (e) => {
-            e.preventDefault();
-            const mdFile = e.target.getAttribute('data-md');
-            try {
-                const response = await fetch(mdFile);
-                const text = await response.text();
-                // 使用 marked 将 markdown 转换为 html
-                document.getElementById('content').innerHTML = marked.parse(text);
-            } catch (error) {
-                console.error('Error loading markdown file:', error);
-                document.getElementById('content').innerHTML =
-                    '<p>Error loading content</p>';
-            }
-        });
-    });
-    // 添加简单的交互效果
-    document.addEventListener('DOMContentLoaded', () => {
-        // 导航栏滚动效果
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-            } else {
-                navbar.style.boxShadow = 'none';
-            }
-        });
-
-        // 按钮点击效果
-        const buttons = document.querySelectorAll('.btn');
-        buttons.forEach(button => {
-            button.addEventListener('click', function () {
-                this.style.transform = 'scale(0.95)';
-                setTimeout(() => {
-                    this.style.transform = 'scale(1)';
-                }, 200);
-            });
-        });
-    });
-</script>
