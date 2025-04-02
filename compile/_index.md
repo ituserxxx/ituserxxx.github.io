@@ -1,7 +1,2 @@
----
-weight: 600
-bookFlatSection: true
-bookCollapseSection: true
-title: "编译"
-slug: /
----
+
+[1-逃逸分析是怎么进行的](./1-逃逸分析是怎么进行的.md)

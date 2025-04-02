@@ -7,7 +7,7 @@ golang
 
 [通道 channel](./channel/_index.md)
 
-[编译 compile](./compile/_index.md)
+[编译 compile](compile/_index.md)
 
 [接口 interface](./interface/_index.md)
 
