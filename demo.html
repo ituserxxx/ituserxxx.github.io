@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown Links</title>
+    <!-- 添加 markdown 解析器 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">VONCE</div>
+        <div class="nav-links">
+            <!-- 修改导航链接 -->
+            <a href="#" class="active" data-md="./README.md">Home</a>
+            <a href="#" data-md="projects.md">Projects</a>
+            <a href="#" data-md="blog.md">Blog</a>
+            <a href="#" data-md="pages.md">Pages</a>
+        </div>
+        <!-- ... 其他导航内容 ... -->
+    </nav>
+
+    <!-- 添加内容显示区域 -->
+    <div id="content"></div>
+
+    <script>
+        // 处理 markdown 文件加载和显示
+        document.querySelectorAll('[data-md]').forEach(link => {
+            link.addEventListener('click', async (e) => {
+                e.preventDefault();
+                const mdFile = e.target.getAttribute('data-md');
+                try {
+                    const response = await fetch(mdFile);
+                    const text = await response.text();
+                    // 使用 marked 将 markdown 转换为 html
+                    document.getElementById('content').innerHTML = marked.parse(text);
+                } catch (error) {
+                    console.error('Error loading markdown file:', error);
+                    document.getElementById('content').innerHTML = 
+                        '<p>Error loading content</p>';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

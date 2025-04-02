@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <!-- 添加 markdown 解析器 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Ituserxxx</div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="./README.md">golang</a>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </nav>
+    <!-- 添加内容显示区域 -->
+    <div id="content"></div>
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Hi there, I am Ituserxxx</h1>
+            <!-- <p class="subtitle">
+                <span class="role">coder</span> and
+                <span class="role">it is IT user</span>
+            </p> -->
+            <pre>
+                天空灰得像哭过
+
+                离开你以后 并没有 更自由
+
+                酸酸的空气 嗅出我们的距离
+
+                一幕锥心的结局
+
+                像呼吸般无法停息
+
+                抽屉泛黄的日记
+
+                榨干了回忆那笑容
+
+                是夏季
+            </pre>
+            <!-- <div class="cta-buttons">
+                <button class="btn primary">Get in touch</button>
+                <button class="btn secondary">See my works</button>
+            </div> -->
+        </div>
+        <div class="hero-image">
+            <img src="./static/img/home.jpg" alt="Ituserxxx">
+        </div>
+        <a href="./README.md">golang</a>
+    </main>
+
+</body>
+
+</html>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9ff;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 100px;
+        background-color: white;
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 20px;
+        position: relative;
+    }
+
+    .nav-links a.active::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 4px;
+        background-color: #14b8a6;
+        border-radius: 50%;
+    }
+
+    .social-links a {
+        color: #333;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px;
+        gap: 50px;
+    }
+
+    .hero-content {
+        flex: 1;
+    }
+
+    h1 {
+        font-size: 48px;
+        color: #1e1b4b;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .role {
+        color: #333;
+        font-weight: bold;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        transition: transform 0.2s;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+    }
+
+    .primary {
+        background-color: #14b8a6;
+        color: white;
+    }
+
+    .secondary {
+        background-color: transparent;
+        color: #333;
+        border: 1px solid #ddd;
+    }
+
+    .hero-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-image img {
+        width: 800px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 24px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .navbar {
+            padding: 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .hero {
+            flex-direction: column;
+            padding: 40px 20px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 300px;
+        }
+    }
+</style>
+
+<script>
+    // 处理 markdown 文件加载和显示
+    document.querySelectorAll('[data-md]').forEach(link => {
+        link.addEventListener('click', async (e) => {
+            e.preventDefault();
+            const mdFile = e.target.getAttribute('data-md');
+            try {
+                const response = await fetch(mdFile);
+                const text = await response.text();
+                // 使用 marked 将 markdown 转换为 html
+                document.getElementById('content').innerHTML = marked.parse(text);
+            } catch (error) {
+                console.error('Error loading markdown file:', error);
+                document.getElementById('content').innerHTML =
+                    '<p>Error loading content</p>';
+            }
+        });
+    });
+    // 添加简单的交互效果
+    document.addEventListener('DOMContentLoaded', () => {
+        // 导航栏滚动效果
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // 按钮点击效果
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 200);
+            });
+        });
+    });
+</script>
