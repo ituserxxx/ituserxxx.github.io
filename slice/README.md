@@ -1,7 +1,7 @@
----
-weight: 100
-bookFlatSection: true
-bookCollapseSection: true
-title: "数组与切片"
-slug: /
----
+
+golang/数组与切片 slice
+
+[1-数组和切片有什么异同](./1-数组和切片有什么异同.md)
+[2-切片的容量是怎样增长的](./2-切片的容量是怎样增长的.md)
+[3-切片作为函数参数](./3-切片作为函数参数.md)
+ 

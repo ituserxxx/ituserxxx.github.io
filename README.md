@@ -1,8 +1,5 @@
 
-
-
 golang
-
 
 [通道 channel](channel/README.md)
 
@@ -19,4 +16,3 @@ golang
 [数组与切片 slice](slice/README.md)
 
 [标准库 stdlib](stdlib/README.md)
-

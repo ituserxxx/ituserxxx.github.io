@@ -1,7 +1,9 @@
----
-weight: 800
-bookFlatSection: true
-bookCollapseSection: true
-title: "垃圾回收器"
-slug: /
----
+
+ 
+golang/垃圾回收器 memgc
+
+[1-垃圾回收的认识](./1-垃圾回收的认识.md)
+[2-垃圾回收机制的实现](./2-垃圾回收机制的实现.md)
+[3-垃圾回收的优化问题](./3-垃圾回收的优化问题.md)
+[4-历史及演进](./4-历史及演进.md)
+[5-总结](./5-总结.md)
