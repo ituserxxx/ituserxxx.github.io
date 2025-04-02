@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portfolio</title>
     <!-- 添加 markdown 解析器 -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="./static/js/marked.min.js"></script>
     <!-- Font Awesome for social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -16,7 +16,7 @@
         <div class="logo">Ituserxxx</div>
         <div class="nav-links">
             <a href="#" class="active">Home</a>
-            <a href="./README.md">golang</a>
+            <a href="#" data-md="README.md">golang</a>
         </div>
         <div class="social-links">
             <a href="#"><i class="fab fa-github"></i></a>
@@ -27,10 +27,6 @@
     <main class="hero">
         <div class="hero-content">
             <h1>Hi there, I am Ituserxxx</h1>
-            <!-- <p class="subtitle">
-                <span class="role">coder</span> and
-                <span class="role">it is IT user</span>
-            </p> -->
             <pre>
                 天空灰得像哭过
 
@@ -56,13 +52,10 @@
         <div class="hero-image">
             <img src="./static/img/home.jpg" alt="Ituserxxx">
         </div>
-        <a href="./README.md">golang</a>
     </main>
-
 </body>
 
 </html>
-
 
 <style>
     * {
@@ -179,6 +172,7 @@
         display: flex;
         justify-content: center;
     }
+
     .hero-image img {
         width: 800px;
         height: 500px;
