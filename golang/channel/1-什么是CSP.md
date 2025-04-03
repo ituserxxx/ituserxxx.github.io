@@ -1,8 +1,4 @@
----
-weight: 401
-title: "什么是 CSP"
-slug: /csp
----
+
 
 > Do not communicate by sharing memory; instead, share memory by communicating.
 
