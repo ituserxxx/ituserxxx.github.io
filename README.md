@@ -7,7 +7,7 @@ golang
 
    - [1-什么是 CSP](./golang/channel/1-什么是%20CSP.md)
 
-   - 1[2-channel 底层的数据结构是什么](./golang/channel/2-channel%20底层的数据结构是什么.md)
+   - [2-channel 底层的数据结构是什么](./golang/channel/2-channel%20底层的数据结构是什么.md)
 
    - [3-向 channel 发送数据的过程是怎样的](./golang/channel/3-向%20channel%20发送数据的过程是怎样的.md)
 
